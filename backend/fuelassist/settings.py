@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m9+=vwnv7j=wh&4+0$#7!nd(=2x)ehk27)*ic4-kd7!_e0wk-5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["fuelassist-backend.onrender.com", "localhost", "127.0.0.1"]
 CORS_ALLOW_ALL_ORIGINS = True
 
 
