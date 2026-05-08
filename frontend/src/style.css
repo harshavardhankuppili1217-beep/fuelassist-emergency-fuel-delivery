@@ -1,0 +1,162 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #172554;
+  background-color: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  text-align: center;
+  padding: 24px;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.08);
+}
+
+.auth-card {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.split {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+input,
+select,
+button {
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 12px;
+  font-size: 15px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.link-btn {
+  background: transparent;
+  color: #2563eb;
+  margin-top: 10px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  background: #dbeafe;
+  color: #1e3a8a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.alert {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.request-list {
+  display: grid;
+  gap: 10px;
+}
+
+.request-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.actions {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.status {
+  font-weight: 700;
+}
+
+.status.pending {
+  color: #a16207;
+}
+
+.status.accepted {
+  color: #1d4ed8;
+}
+
+.status.completed {
+  color: #047857;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
+@media (max-width: 700px) {
+  .split,
+  .request-item {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
