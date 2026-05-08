@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
 
-const API_BASE = "http://fuelassist-backend.onrender.com/api";
+const API_BASE = "https://fuelassist-backend.onrender.com/api";
 const WS_BASE = "wss://fuelassist-backend.onrender.com/ws/updates/";
 
 type Role = "USER" | "BUNK";
